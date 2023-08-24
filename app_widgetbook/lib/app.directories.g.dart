@@ -8,8 +8,6 @@
 // AppGenerator
 // **************************************************************************
 
-import 'dart:core';
-import 'dart:math';
 import 'package:app_widgetbook/auth/components/auth_buttons.dart';
 import 'package:app_widgetbook/auth/pages/auth_page.dart';
 import 'package:app_widgetbook/auth/pages/login_page.dart';
@@ -45,19 +43,9 @@ import 'package:app_widgetbook/core/user/user_follows.dart';
 import 'package:app_widgetbook/core/user/user_info.dart';
 import 'package:app_widgetbook/core/user/username.dart';
 import 'package:app_widgetbook/home/home_page.dart';
-import 'package:auth/src/widgets/auth_buttons.dart';
-import 'package:core/core.dart';
-import 'package:core/src/l10n/app_localizations_extension.dart';
-import 'package:core/src/styles/app_colors.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:intl/intl.dart';
-import 'package:timeago/timeago.dart';
 import 'package:widgetbook/widgetbook.dart';
 
-final directories = [
+final directories = <WidgetbookNode>[
   WidgetbookFolder(
     name: 'widgets',
     children: [
